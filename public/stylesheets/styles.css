@@ -31,8 +31,8 @@ header {
 
 .navigation {
 	padding: 0;
-	margin: 0;
-	width: 100%;
+	margin: auto;
+	width: 980px%;
 	list-style: none;
 	display: flex;
 	flex-flow: row wrap;
@@ -60,8 +60,10 @@ header {
 	color: white;
 }
 
-section {
+.main-content {
 	min-height: 500px;
+	width: 980px;
+	margin: auto;
 }
 
 h1 {
@@ -88,70 +90,4 @@ h3 {
 	color: black;
 	font-weight: bold;
 	font-size: 2.5rem;
-}
-.form-wrapper {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	width: 100%;
-}
-
-.form-wrapper > h3,
-.form-wrapper > form,
-.result-wrapper {
-	margin: auto;
-}
-
-.form-wrapper > form > button {
-	line-height: 37.5px;
-}
-
-.form-wrapper > form > input,
-.form-wrapper > form > button,
-.result-wrapper > h3,
-.result-wrapper > button {
-	
-	padding: 0.5em;
-	background-color: #ececec;
-	border: none;
-	border-bottom: 1px solid #000;
-	font-size: 2rem;
-	font-weight: bold;
-}
-.result-wrapper {
-	margin-top: 1em;
-	display: flex;
-	width: 100;
-	justify-content: center;
-}
-.result-wrapper > h3 {
-	min-width: 150px;
-	text-align: center;
-}
-.result-wrapper > button {
-	margin-left: 0.15em;
-}
-.form-wrapper > form > button:hover,
-.result-wrapper > button:hover {
-	background-color: black;
-	color: white;
-	cursor: pointer;
-}
-/*Svg styles*/
-.icon {
-  /* Allows sizing by changing the icon’s font-size */
-  width: 1em; height: 1em;
-  /* Nice visual alignment for icons alongside text */
-  vertical-align: -0.15em;
-  /* Default path fill = value of the color property */
-  fill: currentColor;
-  /* Paths and strokes that overflow the viewBox can show in IE.
-     If you use normalize.css, it already sets this. */
-  overflow: hidden;
-
-  font-size: 60px;
-}
-#play:hover {
-	fill: blue;
-	cursor: pointer;
 }
