@@ -1,0 +1,16 @@
+@media (min-width: 650px){
+	.navigation {
+		flex-flow: row;
+		justify-content: space-around;
+	}
+	.navigation-selection-item {
+		display: none;
+	}
+	.navigation-item > a {
+		display: block !important;
+	}
+	.main-content-area,
+	.content-area{
+		padding: 0;
+	}
+}

@@ -5,13 +5,16 @@
 		<title>GoLangTestSite</title>
 		<link rel="stylesheet" type="text/css" href="../public/stylesheets/styles.css"></link>
 		<link rel="stylesheet" type="text/css" href="../public/stylesheets/home.css"></link>
-		
+		<link rel="stylesheet" type="text/css" href="../public/stylesheets/desktop.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="../public/scripts/main.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div id="cover-image">
 			<header>
 				<nav>
-					<ul class="navigation">
+					<ul class="navigation content-area">
+						<li class="navigation-selection-item"><span>Menu</span></li>
 						<li class="navigation-item selected"><a href="/" title="Home">Home</a></li>
 						<li class="navigation-item"><a href="/NoteToHex" title="NoteToHex">NoteToHex</a></li>
 						<li class="navigation-item"><a href="/Stream" title="Stream">Stream</a></li>
@@ -20,14 +23,11 @@
 					</ul>
 				</nav>
 			</header>
-			<h1>Welcome to my testsite!</h1>
-			<a href="#" title="Play" aria-label="Play song">
-				<svg class="icon" aria-hidden="true">
-					<use xlink:href="../public/img/icons.svg#play"></use>
-				</svg>
-			</a>
+			<div class="content-area">
+				<h1>Welcome to my testsite!</h1>
+			</div>
 		</div>
-		<section>
+		<section class="main-content-area">
 			<h2>Server written in GoLang</h2>
 		</section>
 	</body>

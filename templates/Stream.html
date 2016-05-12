@@ -5,15 +5,17 @@
 		<title>GoLangTestSite</title>
 		<link rel="stylesheet" type="text/css" href="../public/stylesheets/styles.css"></link>
 		<link rel="stylesheet" type="text/css" href="../public/stylesheets/stream.css"></link>
+		<link rel="stylesheet" type="text/css" href="../public/stylesheets/desktop.css"></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-		<script src="../public/scripts/NoteToHex.js" type="text/javascript"></script>
+		<script src="../public/scripts/main.js" type="text/javascript"></script>
 		
 	</head>
 	<body>
 		<div id="cover-image">
 			<header>
 				<nav>
-					<ul class="navigation">
+					<ul class="navigation content-area">
+						<li class="navigation-selection-item"><span>Menu</span></li>
 						<li class="navigation-item"><a href="/" title="Home">Home</a></li>
 						<li class="navigation-item"><a href="/NoteToHex" title="NoteToHex">NoteToHex</a></li>
 						<li class="navigation-item selected"><a href="/Stream" title="Stream">Stream</a></li>
@@ -24,7 +26,7 @@
 			</header>
 			<h1>Video stream</h1>
 		</div>
-		<section>
+		<section class="main-content-area">
 			<h2>Stream</h2>
 			<div class="stream-wrapper">
 				<img class="stream" src="/Stream/video_feed">

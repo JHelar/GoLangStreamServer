@@ -32,11 +32,10 @@ header {
 .navigation {
 	padding: 0;
 	margin: auto;
-	width: 980px%;
 	list-style: none;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+	flex-flow: column;
+	justify-content: center;
 }
 
 .navigation-item {
@@ -46,13 +45,42 @@ header {
 .naviagtion-item > a:focus,
 .naviagtion-item > a:visited,
 .naviagtion-item > a:link{
-	margin: 0 1em;
-	display: block;
+	display: none;
 	flex: 0 1 auto;
 	background-color: lightblue;
 	text-align: center;
 	padding: 1em;
 	text-decoration: none;
+	width: 100%;
+	font-family: arial;
+	font-weight: bold;
+	color: black;
+}
+
+.navigation-item > a:hover{
+	color: white;
+	background-color: black;
+}
+
+.navigation-selection-item {
+	font-family: arial;
+	font-weight: bolder;
+	padding: 0.5em;
+	padding-right: 0;
+	color: white;
+}
+
+.navigation-selection-item > span {
+	float: right;
+	border: 1px solid white;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+.navigation-selection-item > span:hover,
+.navigation-selection-item > span.selected {
+	border-color: black;
+	background-color: black;
 }
 
 .selected > a{
@@ -60,10 +88,19 @@ header {
 	color: white;
 }
 
-.main-content {
+.content-area {
+	max-width: 980px;
+	margin: 0 auto;
+	padding:0 1em;
+}
+
+.main-content-area {
 	min-height: 500px;
-	width: 980px;
-	margin: auto;
+	font-family: arial;
+	max-width: 980px;
+	margin: 0 auto;
+	margin-top: 3em;
+	padding: 0 1em;
 }
 
 h1 {
