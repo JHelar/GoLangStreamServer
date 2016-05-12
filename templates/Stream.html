@@ -4,29 +4,28 @@
 		<meta charset="UTF-8">
 		<title>GoLangTestSite</title>
 		<link rel="stylesheet" type="text/css" href="../public/stylesheets/styles.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="../public/scripts/NoteToHex.js" type="text/javascript"></script>
+		
 	</head>
 	<body>
 		<div id="cover-image">
 			<header>
 				<nav>
 					<ul class="navigation">
-						<li class="navigation-item selected"><a href="/" title="Home">Home</a></li>
+						<li class="navigation-item"><a href="/" title="Home">Home</a></li>
 						<li class="navigation-item"><a href="/NoteToHex" title="NoteToHex">NoteToHex</a></li>
-						<li class="navigation-item"><a href="/Stream" title="Stream">Stream</a></li>
+						<li class="navigation-item selected"><a href="/Stream" title="Stream">Stream</a></li>
 						<li class="navigation-item"><a href="#" title="Item4">Item4</a></li>
 						<li class="navigation-item"><a href="#" title="Item5">Item5</a></li>
 					</ul>
 				</nav>
 			</header>
-			<h1>Welcome to my testsite!</h1>
-			<a href="#" title="Play" aria-label="Play song">
-				<svg class="icon" aria-hidden="true">
-					<use xlink:href="../public/img/icons.svg#play"></use>
-				</svg>
-			</a>
+			<h1>Video stream</h1>
 		</div>
 		<section>
-			<h2>Server written in GoLang</h2>
+			<h2>Stream</h2>
+			<img src="/Stream/video_feed">
 		</section>
 	</body>
 </html>

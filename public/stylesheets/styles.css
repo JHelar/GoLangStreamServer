@@ -26,7 +26,6 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 80px;
 	background-color: rgba(120, 0, 0, 0.5);
 }
 
@@ -34,7 +33,6 @@ header {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	height: 100%;
 	list-style: none;
 	display: flex;
 	flex-flow: row wrap;
@@ -42,24 +40,28 @@ header {
 }
 
 .navigation-item {
+	display: inherit;
+}
+.navigation-item > a,
+.naviagtion-item > a:focus,
+.naviagtion-item > a:visited,
+.naviagtion-item > a:link{
 	margin: 0 1em;
 	display: block;
 	flex: 0 1 auto;
 	background-color: lightblue;
 	text-align: center;
 	padding: 1em;
+	text-decoration: none;
 }
 
-.navigation-item > a {
-	width: 100%;
-	height: 100%;
-	display: inline;
-	vertical-align: center;
-
+.selected > a{
+	background-color: black;
+	color: white;
 }
 
 section {
-	min-height: 250px;
+	min-height: 500px;
 }
 
 h1 {
@@ -80,6 +82,61 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+.form-wrapper {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.form-wrapper > h3,
+.form-wrapper > form,
+.result-wrapper {
+	margin: auto;
+}
+
+.form-wrapper > form > button {
+	line-height: 37.5px;
+}
+
+.form-wrapper > form > input,
+.form-wrapper > form > button,
+.result-wrapper > h3,
+.result-wrapper > button {
+	
+	padding: 0.5em;
+	background-color: #ececec;
+	border: none;
+	border-bottom: 1px solid #000;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.result-wrapper {
+	margin-top: 1em;
+	display: flex;
+	width: 100;
+	justify-content: center;
+}
+.result-wrapper > h3 {
+	min-width: 150px;
+	text-align: center;
+}
+.result-wrapper > button {
+	margin-left: 0.15em;
+}
+.form-wrapper > form > button:hover,
+.result-wrapper > button:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
 /*Svg styles*/
 .icon {
   /* Allows sizing by changing the icon’s font-size */
